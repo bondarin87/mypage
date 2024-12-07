@@ -1,0 +1,115 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: rgb(0, 0, 0);
+}
+.wrap {
+
+min-height: 100%;
+max-width: 728px;
+display: flex;
+flex-direction: column;
+position: absolute;
+left: 10px;
+right: 10px;
+
+
+}
+.main {
+   flex: 1 1 auto;
+}
+.header__smile {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.ojo1, .ojo2 {
+    background-color: orange;
+    height: 10px;
+    width: 10px;position: absolute;
+    top: 25px;
+    border-radius: 50%;
+    left: 20px;
+    z-index: 1;
+}
+.ojo2 {
+    left: 42px;
+}
+
+.smile1, .smile2  {
+    height: 35px;
+    width: 35px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    left: 18px;
+    top: 18px;
+}
+.smile2 {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    left: 15px;
+    top: 10px;
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    background-color: orange;
+}
+
+.header, .main, .footer {
+
+}
+.menu__list {
+    display: flex;
+    list-style-type: none;
+   
+}
+.menu__list li {
+    border: solid 1px;
+    margin-right: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+ li a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    height: 70px;
+    background-color: black;
+    color: orange;
+}
