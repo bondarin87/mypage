@@ -5,11 +5,11 @@ let i=0;
 let timerId = setInterval(function() {
     i++;
     if (i%47 == 0) {
-      ojo.style.backgroundColor = 'black'; 
-      ojo1.style.backgroundColor = 'black'; 
+      ojo.style.backgroundColor = '#2272FF'; 
+      ojo1.style.backgroundColor = '#2272FF'; 
     } else {
-        ojo.style.backgroundColor = 'orange'; 
-        ojo1.style.backgroundColor = 'orange';   
+        ojo.style.backgroundColor = 'black'; 
+        ojo1.style.backgroundColor = 'black';   
     }
      
     
