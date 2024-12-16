@@ -24,7 +24,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-    background-image: url(pics/bg2.png);
+    background-image: url(../pics/bg2.png);
 	color: rgb(0, 0, 0);
 }
 .wrap {
