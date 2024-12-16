@@ -24,6 +24,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+    background-image: url(/pics/bg2.png);
 	color: rgb(0, 0, 0);
 }
 .wrap {
@@ -35,6 +36,7 @@ flex-direction: column;
 position: absolute;
 left: 10px;
 right: 10px;
+margin: 0 auto;
 
 
 }
@@ -44,12 +46,12 @@ right: 10px;
 .header__smile {
     height: 50px;
     width: 50px;
-    background-color: black;
+    background-color: #2272FF;
     margin-left: 10px;
     border-radius: 50%;
 }
 .ojo1, .ojo2 {
-    background-color: orange;
+    background-color: #2272FF;
     height: 10px;
     width: 10px;position: absolute;
     top: 25px;
@@ -64,14 +66,14 @@ right: 10px;
 .smile1, .smile2  {
     height: 35px;
     width: 35px;
-    background-color: orange;
+    background-color: black;
     position: absolute;
     border-radius: 50%;
     left: 18px;
     top: 18px;
 }
 .smile2 {
-    background-color: black;
+    background-color: #2272FF;
     height: 40px;
     width: 40px;
     left: 15px;
@@ -81,15 +83,16 @@ right: 10px;
 
 .header__container {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     height: 70px;
+    min-width:100%;
     align-items: center;
-    background-color: orange;
+   
+    border:1px dashed #2272FF ;
 }
 
-.header, .main, .footer {
 
-}
 .menu__list {
     display: flex;
     list-style-type: none;
@@ -100,16 +103,109 @@ right: 10px;
     margin-right: 10px;
     padding: 3px;
     border-radius: 5px;
+    border:1px dashed #2272FF ;
+    
 }
 
  li a{
     
     text-decoration: none;
-    color: black;
+    color: #2272FF;
 }
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.block {
+    margin: 10px auto;
+    height: 400px;
+    width: 300px;
+    border:1px dashed #2272FF ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block:first-child {
+    margin-top: 0;
+}
+.tierra {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #2272FF;
+    border-radius: 50%;
+   
+    
+}
+@keyframes luna1{
+    from{
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
+.luna {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 250px;
+    background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(109,115,111,1) 47%, rgba(249,254,255,1) 100%);
+    transform-origin: -100px ;
+    animation: luna1 60s linear  infinite ;
+
+}
+.block.two {
+    justify-content: start;
+    align-items: start;
+    position: relative;
+}
+@keyframes bola1 {
+40%,70%,90% {
+    animation-timing-function: ease-out;
+    bottom: 0;
+}
+0% { bottom: 360px;
+    left: 0px;
+    animation-timing-function: ease-in;
+}
+55% {
+    bottom: 50px;
+    animation-timing-function: ease-in;
+}
+80% {
+    bottom: 25px;
+    animation-timing-function: ease-in;
+}
+95% {
+    bottom: 10px;
+    animation-timing-function: ease-in;
+}
+
+100% {
+    left: 260px;
+    bottom: 0px;
+    animation-timing-function: ease-out;
+}
+
+}
+.bola {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+background: linear-gradient(128deg, rgba(241,246,246,1) 0%, rgba(14,3,54,1) 100%);
+animation: bola1 2s 0s  infinite  forwards ;
+} 
+
 
 .footer {
     height: 70px;
-    background-color: black;
-    color: orange;
+    
+    color: #2272FF;
+    border: 1px dashed #2272FF ;
 }
