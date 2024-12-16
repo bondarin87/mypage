@@ -83,7 +83,7 @@ margin: 0 auto;
 
 .header__container {
     display: flex;
-    position: fixed;
+    
     justify-content: space-between;
     height: 70px;
     min-width:100%;
